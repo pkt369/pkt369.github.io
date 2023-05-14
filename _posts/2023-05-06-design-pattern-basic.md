@@ -1,13 +1,13 @@
 ---
 title: "Design pattern 개념"
-excerpt: "design pattern 개념"
+excerpt: "Design pattern 개념"
 
 categories:
-  - CS
+  - Design Pattern
 tags:
   - [design pattern]
 
-permalink: /CS/design-pattern-basic/
+permalink: /Design-Pattern/basic/
 
 toc: true
 toc_sticky: true
@@ -25,7 +25,7 @@ last_modified_at: 2023-05-06
 <br>
 <br>
 
-## GoF (Gang of Fout) 디자인 패턴
+## GoF (Gang of Four) 디자인 패턴
 - 소프트웨어 개발 영역에서 디자인 패턴을 구체화하고 체계화한 사람들입니다.
   - 에리히 감마(Erich Gamma), 리차드 헬름(Richard Helm), 랄프 존슨(Ralph Johnson), 존 블리시디스(John Vissides)
 - 23가지 디자인 패턴을 정리하고 디자인 패턴은 생성(Creational), 구조(Structural), 행위(Behavioral) 3가지로 분류하였습니다.
