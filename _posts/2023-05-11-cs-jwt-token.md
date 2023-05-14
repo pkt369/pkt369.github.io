@@ -1,11 +1,11 @@
 ---
-title: "jwt token"
-excerpt: "jwt token 개념과 어디서 왜 사용되어야 하는지에 대한 글입니다."
+title: "Jwt Token"
+excerpt: "Jwt Token 개념과 어디서 왜 사용되어야 하는지에 대한 글입니다."
 
 categories:
   - CS
 tags:
-  - [jwt token, 인증, 인가]
+  - [Jwt Token, 인증, 인가]
 
 permalink: /CS/jwt-token/
 
@@ -73,19 +73,6 @@ Signature 는 토큰의 무결성을 보장하기 위해 사용합니다.<br>
 <br>
 만약 Jwt Token 을 이용하게 되면 세션에 데이터를 저장하지 않기때문에 위와 같은 문제들을 해결할 수 있습니다. <br>
 <br> 
-
-
-
-
-<br>
-<br>
-
-----
-
-## Reference
-[https://www.okta.com/kr/identity-101/authentication-vs-authorization/](https://www.okta.com/kr/identity-101/authentication-vs-authorization/) <br>
-[https://velog.io/@aaronddy/%EC%9D%B8%EC%A6%9DAuthentication%EA%B3%BC-%EC%9D%B8%EA%B0%80Authorization](https://velog.io/@aaronddy/%EC%9D%B8%EC%A6%9DAuthentication%EA%B3%BC-%EC%9D%B8%EA%B0%80Authorization)
-
 
 
 
