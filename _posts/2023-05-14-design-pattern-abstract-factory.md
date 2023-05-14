@@ -1,5 +1,5 @@
 ---
-title: "Abstract Factoryc(추상팩토리 패턴)"
+title: "Abstract Factory(추상팩토리 패턴)"
 excerpt: "Design Pattern Abstract Factory Pattern"
 
 categories:
