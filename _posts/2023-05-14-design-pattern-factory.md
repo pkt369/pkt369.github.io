@@ -1,5 +1,5 @@
 ---
-title: "Factory Pattern"
+title: "Factory Pattern(팩토리 패턴)"
 excerpt: "Design Pattern Factory Pattern"
 
 categories:
@@ -24,13 +24,13 @@ last_modified_at: 2023-05-14
 팩토리 패턴을 적용하기 전 코드는 밑과 같습니다. <br>
 ```java
 interface Car {
-  public String drive();
+  public void drive();
 }
 
 class Porsche implements Car{
   public Porsche() {}
 
-  public String drive() {
+  public void drive() {
     System.out.println("porsche911 drive");
   }
 }
@@ -38,7 +38,7 @@ class Porsche implements Car{
 class Tesla implements Car {
   public Tesla() {}
 
-  public String drive() {
+  public void drive() {
     System.out.println("teslaS drive");
   }
 }
@@ -81,7 +81,7 @@ class EmptyCar implements Car{
   }
 }
 class CarFactory {
-  public static Optinal<Car> getInstance(String name) {
+  public static Car getInstance(String name) {
     if (name.equals("porsche")) {
       return new Porsche();
     }
@@ -107,12 +107,12 @@ class Main {
 
 ```java
 class Avante implements Car{
-  public String drive() {
+  public void drive() {
     System.out.println("Avante drive");
   }
 }
 class CarFactory {
-  public static Optinal<Car> getInstance(String name) {
+  public static Car getInstance(String name) {
     if (name.equals("porsche")) {
       return new Porsche();
     }
