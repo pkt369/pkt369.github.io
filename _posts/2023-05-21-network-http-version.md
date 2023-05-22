@@ -28,7 +28,7 @@ HTTP TCP/IP 는 3 way Handshake 을 통해 연결을 먼저 합니다. <br>
 
 ## HTTP 1.0
 HTTP 1.0 의 특징은 3 way handshake 를 하고 나서 한번의 요청과 응답이 왔다갔다 하고나서 연결을 끊는 것이 특징입니다.<br>
-![http1.0](/assets/images/posts_img/network-http-https/http1-0.png) <br>
+![http1.0](/assets/images/posts_img/network-http-version/http1-0.png) <br>
 <br>
 한번마다 연결을 하게되면 연결을 하는데 많은 비용을 사용하게 됩니다.<br>
 그래서 나온 것이 keep-alive 옵션입니다. <br>
@@ -39,7 +39,7 @@ HTTP 1.0 의 특징은 3 way handshake 를 하고 나서 한번의 요청과 응
 
 ## HTTP 1.1
 HTTP 1.1 은 1.0을 보완한 프로토콜입니다. 위에서 언급한 keep-alive 는 한번의 연결로 많은 요청과 응답을 주고 받을 수 있게 되었습니다.<br>
-![http1.1](/assets/images/posts_img/network-http-https/http1-1.png) <br>
+![http1.1](/assets/images/posts_img/network-http-version/http1-1.png) <br>
 <br>
 하지만 많은 요청과 응답을 하는 사이트가 나타났고, 한 요청이 오래걸리면서 다음 요청들이 기다려야 하는 현상이 벌어졌습니다. (HOL Blocking - head of line Blocking) <br>
 이 문제가 이슈가 되었고, 이 문제를 보완한 다음 버전인 HTTP 2.0 이 나오게 되었습니다. <br>
@@ -117,14 +117,14 @@ A와 B 는 1번과 같이 동작됩니다.<br>
 <br>
 참조) 4번의 경우 헷갈려 챗지피티를 통해 문의를 했고 답변 받았습니다.<br>
 
-![network-stream-weight](/assets/images/posts_img/network-http-https/network-stream-weight.png) <br>
+![network-stream-weight](/assets/images/posts_img/network-http-version/network-stream-weight.png) <br>
 <br>
 <br>
 
 #### 추가 성능 개선
 HTTP 2.0 에서 지원하는 또다른 기능으로는 하나의 요청에 여러개의 응답을 보낼수 있다는 것입니다.<br>
 예를 들어 html 요청했을 때 html 뿐만 아니라 css, image 등을 보내줄 수 있게 되었습니다.<br>
-![http-server-push](/assets/images/posts_img/network-http-https/http-server-push.png) <br>
+![http-server-push](/assets/images/posts_img/network-http-version/http-server-push.png) <br>
 <br>
 <br>
 
