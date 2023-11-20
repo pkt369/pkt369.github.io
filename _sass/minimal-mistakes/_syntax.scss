@@ -6,9 +6,9 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background-color: $code-background-color;
+  background-color: $darcula-background-color;
 
-  color: $base05;
+  color: $darcula-font-color;
   font-family: $monospace;
   font-size: ($type-size-6 + $type-size-5) / 2;
   line-height: 1.5;
@@ -36,8 +36,8 @@ figure.highlight {
     &.rouge-gutter {
       padding-right: 1em;
       width: 1em;
-      color: $base04;
-      border-right: 1px solid $base04;
+      color: $darcula-line-color;
+      border-right: 1px solid $darcula-line-color;
       text-align: right;
     }
 
@@ -58,263 +58,201 @@ figure.highlight {
 }
 
 .highlight .hll {
-  background-color: $base06;
+  background-color: #3e3e3e;  // Darcula 강조 색상
 }
+
 .highlight {
   .c {
-    /* Comment */
-    color: $base04;
+    color: #6272a4;  // Darcula 주석 색상
   }
   .err {
-    /* Error */
-    color: $base08;
+    color: #f92672;  // Darcula 에러 색상
   }
   .k {
-    /* Keyword */
-    color: $base0e;
+    color: #f92672;  // Darcula 키워드 색상
   }
   .l {
-    /* Literal */
-    color: $base09;
+    color: #f8f8f2;  // Darcula 리터럴 색상
   }
   .n {
-    /* Name */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 이름 색상
   }
   .o {
-    /* Operator */
-    color: $base0c;
+    color: #66d9ef;  // Darcula 연산자 색상
   }
   .p {
-    /* Punctuation */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 구두점 색상
   }
   .cm {
-    /* Comment.Multiline */
-    color: $base04;
+    color: #6272a4;  // Darcula 다중행 주석 색상
   }
   .cp {
-    /* Comment.Preproc */
-    color: $base04;
+    color: #6272a4;  // Darcula 전처리기 색상
   }
   .c1 {
-    /* Comment.Single */
-    color: $base04;
+    color: #6272a4;  // Darcula 단일행 주석 색상
   }
   .cs {
-    /* Comment.Special */
-    color: $base04;
+    color: #6272a4;  // Darcula 특수 주석 색상
   }
   .gd {
-    /* Generic.Deleted */
-    color: $base08;
+    color: #f92672;  // Darcula 삭제된 코드 색상
   }
   .ge {
-    /* Generic.Emph */
-    font-style: italic;
+    font-style: italic;  // Darcula 강조 텍스트 이탤릭체
   }
   .gh {
-    /* Generic.Heading */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 헤딩 색상
     font-weight: bold;
   }
   .gi {
-    /* Generic.Inserted */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 추가된 코드 색상
   }
   .gp {
-    /* Generic.Prompt */
-    color: $base04;
+    color: #f8f8f2;  // Darcula 프롬프트 색상
     font-weight: bold;
   }
   .gs {
-    /* Generic.Strong */
-    font-weight: bold;
+    font-weight: bold;  // Darcula 강조 텍스트 굵게
   }
   .gu {
-    /* Generic.Subheading */
-    color: $base0c;
+    color: #66d9ef;  // Darcula 부제목 색상
     font-weight: bold;
   }
   .kc {
-    /* Keyword.Constant */
-    color: $base0e;
+    color: #f92672;  // Darcula 상수 키워드 색상
   }
   .kd {
-    /* Keyword.Declaration */
-    color: $base0e;
+    color: #f92672;  // Darcula 선언 키워드 색상
   }
   .kn {
-    /* Keyword.Namespace */
-    color: $base0c;
+    color: #a6e22e;  // Darcula 네임스페이스 키워드 색상
   }
   .kp {
-    /* Keyword.Pseudo */
-    color: $base0e;
+    color: #f92672;  // Darcula 가상 키워드 색상
   }
   .kr {
-    /* Keyword.Reserved */
-    color: $base0e;
+    color: #f92672;  // Darcula 예약어 키워드 색상
   }
   .kt {
-    /* Keyword.Type */
-    color: $base0a;
+    color: #a6e22e;  // Darcula 타입 키워드 색상
   }
   .ld {
-    /* Literal.Date */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 날짜 리터럴 색상
   }
   .m {
-    /* Literal.Number */
-    color: $base09;
+    color: #ae81ff;  // Darcula 숫자 리터럴 색상
   }
   .s {
-    /* Literal.String */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 문자열 리터럴 색상
   }
   .na {
-    /* Name.Attribute */
-    color: $base0d;
+    color: #a6e22e;  // Darcula 속성 이름 색상
   }
   .nb {
-    /* Name.Builtin */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 내장 변수 색상
   }
   .nc {
-    /* Name.Class */
-    color: $base0a;
+    color: #a6e22e;  // Darcula 클래스 이름 색상
   }
   .no {
-    /* Name.Constant */
-    color: $base08;
+    color: #f92672;  // Darcula 상수 이름 색상
   }
   .nd {
-    /* Name.Decorator */
-    color: $base0c;
+    color: #a6e22e;  // Darcula 데코레이터 이름 색상
   }
   .ni {
-    /* Name.Entity */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 엔터티 이름 색상
   }
   .ne {
-    /* Name.Exception */
-    color: $base08;
+    color: #f92672;  // Darcula 예외 이름 색상
   }
   .nf {
-    /* Name.Function */
-    color: $base0d;
+    color: #a6e22e;  // Darcula 함수 이름 색상
   }
   .nl {
-    /* Name.Label */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 라벨 이름 색상
   }
   .nn {
-    /* Name.Namespace */
-    color: $base0a;
+    color: #a6e22e;  // Darcula 네임스페이스 이름 색상
   }
   .nx {
-    /* Name.Other */
-    color: $base0d;
+    color: #a6e22e;  // Darcula 기타 이름 색상
   }
   .py {
-    /* Name.Property */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 속성 이름 색상
   }
   .nt {
-    /* Name.Tag */
-    color: $base0c;
+    color: #f92672;  // Darcula 태그 이름 색상
   }
   .nv {
-    /* Name.Variable */
-    color: $base08;
+    color: #f92672;  // Darcula 변수 이름 색상
   }
   .ow {
-    /* Operator.Word */
-    color: $base0c;
+    color: #f92672;  // Darcula 연산자 단어 색상
   }
   .w {
-    /* Text.Whitespace */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 공백 색상
   }
   .mf {
-    /* Literal.Number.Float */
-    color: $base09;
+    color: #ae81ff;  // Darcula 부동 소수점 색상
   }
   .mh {
-    /* Literal.Number.Hex */
-    color: $base09;
+    color: #ae81ff;  // Darcula 16진수 색상
   }
   .mi {
-    /* Literal.Number.Integer */
-    color: $base09;
+    color: #ae81ff;  // Darcula 정수 색상
   }
   .mo {
-    /* Literal.Number.Oct */
-    color: $base09;
+    color: #ae81ff;  // Darcula 8진수 색상
   }
   .sb {
-    /* Literal.String.Backtick */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 백틱
   }
   .sc {
-    /* Literal.String.Char */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 문자 색상
   }
   .sd {
-    /* Literal.String.Doc */
-    color: $base04;
+    color: #f8f8f2;  // Darcula 문서 문자열 색상
   }
   .s2 {
-    /* Literal.String.Double */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 이중 문자열 색상
   }
   .se {
-    /* Literal.String.Escape */
-    color: $base09;
+    color: #ae81ff;  // Darcula 이스케이프 문자 색상
   }
   .sh {
-    /* Literal.String.Heredoc */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 헤어독 문자열 색상
   }
   .si {
-    /* Literal.String.Interpol */
-    color: $base09;
+    color: #ae81ff;  // Darcula 보간 문자열 색상
   }
   .sx {
-    /* Literal.String.Other */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 다중 문자열 색상
   }
   .sr {
-    /* Literal.String.Regex */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 정규 표현식 문자열 색상
   }
   .s1 {
-    /* Literal.String.Single */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 단일 문자열 색상
   }
   .ss {
-    /* Literal.String.Symbol */
-    color: $base0b;
+    color: #a6e22e;  // Darcula 심볼 문자열 색상
   }
   .bp {
-    /* Name.Builtin.Pseudo */
-    color: $base05;
+    color: #f8f8f2;  // Darcula 가상 키워드 색상
   }
   .vc {
-    /* Name.Variable.Class */
-    color: $base08;
+    color: #a6e22e;  // Darcula 클래스 변수 색상
   }
   .vg {
-    /* Name.Variable.Global */
-    color: $base08;
+    color: #a6e22e;  // Darcula 전역 변수 색상
   }
   .vi {
-    /* Name.Variable.Instance */
-    color: $base08;
+    color: #a6e22e;  // Darcula 인스턴스 변수 색상
   }
   .il {
-    /* Literal.Number.Integer.Long */
-    color: $base09;
+    color: #ae81ff;  // Darcula 정수 색상
   }
 }
 
