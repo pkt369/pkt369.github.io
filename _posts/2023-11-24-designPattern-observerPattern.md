@@ -43,7 +43,7 @@ last_modified_at: 2023-11-24
 
 우리는 휴대폰에 자주 광고 알림이 발생합니다.
 
-![home-screen](/assets/images/posts_img/cs-observerPattern/home-screen.jpeg){: width="30%" height="30%"}
+![home-screen](/assets/images/posts_img/cs-observerPattern/home-screen.jpeg){: width="40%" height="40%"}
 
 이러한 광고는 해당 업체를 주체라고 할 수 있고 우리가 옵저버라고 할수 있습니다.
 
@@ -53,7 +53,7 @@ last_modified_at: 2023-11-24
 
 그럼 주체(업체)는 어떻게 우리들을 관리할까요?
 
-![application-setting](/assets/images/posts_img/cs-observerPattern/application-setting.jpeg){: width="30%" height="30%"}
+![application-setting](/assets/images/posts_img/cs-observerPattern/application-setting.jpeg){: width="40%" height="40%"}
 
 옵저버들은 위처럼 알림 설정을 통해서 알림에 들어갔다 나갔다 할 수 있습니다.
 
