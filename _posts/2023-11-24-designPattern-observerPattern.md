@@ -45,7 +45,7 @@ last_modified_at: 2023-11-24
 
 ![home-screen](/assets/images/posts_img/cs-observerPattern/home-screen.jpeg){: width="40%" height="40%"}
 
-이러한 광고는 해당 업체를 주체라고 할 수 있고 우리가 옵저버라고 할수 있습니다.
+이러한 광고는 **해당 업체를 주체라고 할 수 있고 우리가 옵저버**라고 할수 있습니다.
 
 주체는 옵저버들을 관리하고 알려줄 소식이 있을 때 옵저버 패턴을 이용해 옵저버들에게 정보를 알려줍니다.
 
@@ -55,7 +55,7 @@ last_modified_at: 2023-11-24
 
 ![application-setting](/assets/images/posts_img/cs-observerPattern/application-setting.jpeg){: width="40%" height="40%"}
 
-옵저버들은 위처럼 알림 설정을 통해서 알림에 들어갔다 나갔다 할 수 있습니다.
+옵저버들은 위처럼 알림 설정을 통해서 알림에 들어갔다 나갔다 할 수 있습니다. 
 
 <br>
 
