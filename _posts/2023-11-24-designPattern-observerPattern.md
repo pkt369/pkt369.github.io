@@ -144,7 +144,7 @@ public class Main {
 
 위를 실행시키면
 
-![push-result](/assets/images/posts_img/cs-observerPattern/push-result.png) {: width="80%" height="80%"} 
+![push-result](/assets/images/posts_img/cs-observerPattern/push-result.png){: width="80%" height="80%"} 
 
 그림처럼 옵저버들에게 데이터를 보낸 것을 볼 수 있습니다.
 
@@ -237,7 +237,7 @@ public class Main {
 
 이후 옵저버들이 가져온 메세지로 휴대폰에 뿌려줍니다.
 
-![pull-result](/assets/images/posts_img/cs-observerPattern/pull-result.png) {: width="80%" height="80%"} 
+![pull-result](/assets/images/posts_img/cs-observerPattern/pull-result.png){: width="80%" height="80%"} 
 
 <br>
 
