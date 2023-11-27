@@ -17,6 +17,9 @@
 # 해당 디렉토리 내의 다른 테마로 변경 가능 (minimal-mistakes 기본 제공 테마)
 minimal_mistakes_skin: "plum" # "default" "air", "aqua", ...
 
+# 포스팅 추가를 위한 옵션
+future: true
+
 # Site Settings
 locale: "ko-KR" #"en-US"
 title: "jun's Devlog" # 상단 헤더에 보이는 블로그 명
