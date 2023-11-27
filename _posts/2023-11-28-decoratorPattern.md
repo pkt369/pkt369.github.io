@@ -31,6 +31,8 @@ last_modified_at: 2023-11-28
 
 <br>
 
+<br>
+
 # 데코레이터 패턴은 언제 사용하는가
 
 만약 새로운 햄버거 가게가 생겼다고 가정해봅시다.
@@ -57,6 +59,9 @@ public class Hamburger {
 
 만약 여기서 새롭게 Egg 를 추가하게 되면 **OCP (Open Close Princle)를 위배했다라고 말하며, 객체 지향에서 원하는 설계가 아닙니다.**
 
+> 로버트 마틴의 SOLID 는 SRP, OCP, LSP, ISP, DIP 로 객체 지향 프로그래밍 및 설계의 다섯가지 기본 원칙을 정의한 것 입니다.
+> https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)
+
 <br>
 
 만약 철판에서 한번 굽고 이후 오븐에 굽는 햄버거가 나온다면 
@@ -81,6 +86,8 @@ public class Hamburger {
 이전 코드와 중복되는 코드도 생깁니다. 
 
 **이전 코드를 수정하지 않고, 중복되지 않으며, 확장도 할수 있는 패턴이 바로 데코레이터 패턴**입니다.
+
+<br>
 
 <br>
 
@@ -178,6 +185,8 @@ public class Lettuce extends Topping {
 이렇게 함으로써 결과는 다음과 같습니다.
 
 ![result](/assets/images/posts_img/cs-decoratorPattern/result.png)
+
+<br>
 
 <br>
 
