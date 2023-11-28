@@ -51,9 +51,9 @@ public class Hamburger {
     this.name = "햄버거";
   }
 
-	hasVegetable() {...}
-	hasMeat() {...}
-	ironBake() { System.out.println("철판")ㅋ; }
+	public hasVegetable() {...}
+	public hasMeat() {...}
+	public ironBake() { System.out.println("철판")ㅋ; }
 }
 ```
 
@@ -77,8 +77,8 @@ public class Hamburger {
     this.name = "햄버거";
   }
 
-	ironBake() { System.out.println("철판"); }
-	ovenBake() { System.out.println("오븐"); }
+	public ironBake() { System.out.println("철판"); }
+	public ovenBake() { System.out.println("오븐"); }
 }
 ```
 
