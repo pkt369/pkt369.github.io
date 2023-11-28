@@ -53,14 +53,13 @@ public class Hamburger {
 
 	hasVegetable() {...}
 	hasMeat() {...}
-	ironBake() { System.out.println("철판"); }
+	ironBake() { System.out.println("철판")ㅋ; }
 }
 ```
 
 만약 여기서 새롭게 Egg 를 추가하게 되면 **OCP (Open Close Princle)를 위배했다라고 말하며, 객체 지향에서 원하는 설계가 아닙니다.**
 
 > 로버트 마틴의 SOLID 는 SRP, OCP, LSP, ISP, DIP 로 객체 지향 프로그래밍 및 설계의 다섯가지 기본 원칙을 정의한 것 입니다.
-> https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)
 
 <br>
 
@@ -140,7 +139,9 @@ public abstract class Topping extends Hamburger {
   Hamburger hamburger;
   public abstract String getName();
 }
-
+/*
+* ---------------Chicken---------------
+*/
 public class Chicken extends Topping {
   public Chicken(Hamburger hamburger) {
     this.hamburger = hamburger;
@@ -156,7 +157,9 @@ public class Chicken extends Topping {
     return "치킨고기 " + hamburger.getName();
   }
 }
-
+/*
+* --------------Lettuce----------------
+*/
 public class Lettuce extends Topping {
   public Lettuce(Hamburger hamburger) {
     this.hamburger = hamburger;
