@@ -56,7 +56,9 @@ class Main {
 
 싱글톤은 위처럼 생성자를 private 하게 만들어 새롭게 인스턴스를 만들지 못하게 만들고, getInstance 함수를 통해 하나의 인스턴스만 가져오는 방식을 말합니다.
 
-특히 위의 방식은 Lazy 방식으로 getInstance 함수를 불러야만 객체가 생성되기 때문에 메모리적인 이점이 존재합니다.
+<br>
+
+특히 위의 방식은 **Lazy 방식으로 getInstance 함수를 불러야만 객체가 생성되기 때문에 메모리적인 이점이 존재**합니다.
 
 하지만 위의 코드에도 문제점이 존재합니다.
 
@@ -64,21 +66,17 @@ class Main {
 
 # 멀티스레드
 
-스레드는 일꾼을 의미합니다. 그렇다면 싱글스레드는 하나의 일꾼으로 이해할 수 있고, 여러명의 일꾼을 멀티스레드라고 이해할 수 있습니다.
+스레드는 일꾼을 의미합니다. 그렇다면 **싱글스레드는 하나의 일꾼으로 이해할 수 있고, 여러명의 일꾼을 멀티스레드**라고 이해할 수 있습니다.
 
 멀티 스레드에서 위의 코드에 접근하게 되면 어떻게 진행이 될까요?
 
 <br>
 
-동시에 접근한다면 두개의 Singleton 이 생성될 수 있습니다. 그렇다면 이것은 우리게 생각하지못한 문제가 됩니다.
+동시에 접근한다면 멀티스레드 갯수만큼의 Singleton 이 생성될 수 있습니다. 그렇다면 이것은 싱글톤이 아니게 됩니다.
 
 이것을 해결하기 위해 여러가지 해결점이 존재합니다.
 
 <br>
-
-
-
-## 멀티스레드 해결방법
 
 ### Synchronized 이용
 
@@ -211,13 +209,13 @@ public class Singleton {
 
 먼저 위처럼 가능한 이유는 **Class 를 로딩할 때 Thread Safe 를 보장하는 것을 이용**하였습니다. 즉, 위 방식의 경우 하나의 인스턴스만 생성되는 걸 보장합니다.
 
-
+<br>
 
 단점으로는 **역직렬화 수행시 새로운 객체가 생성되고, 리플렉션을 이용해 내부 생성자 호출**이 가능합니다.
 
 > 역직렬화는 직렬화된 대상 객체를 다시 객체로 변환하는 것을 의미합니다.
-> 리플렉션은 동적으로 클래스에 접근할 때 사용하는 자바 API 입니다.
 >
+> 리플렉션은 동적으로 클래스에 접근할 때 사용하는 자바 API 입니다.
 
 자바 직렬화 역직렬화 참조) [https://steady-coding.tistory.com/576#google_vignette](https://steady-coding.tistory.com/576#google_vignette)
 
@@ -234,6 +232,6 @@ public class Singleton {
 
 [https://nesoy.github.io/articles/2018-06/Java-volatile](https://nesoy.github.io/articles/2018-06/Java-volatile)
 
-[https://steady-coding.tistory.com/576#google_vignette](https://steady-coding.tistory.com/576#google_vignette
+[https://steady-coding.tistory.com/576#google_vignette](https://steady-coding.tistory.com/576#google_vignette)
 
 [https://velog.io/@yeon/Reflection이란](https://velog.io/@yeon/Reflection%EC%9D%B4%EB%9E%80)
