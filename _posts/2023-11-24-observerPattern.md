@@ -63,13 +63,13 @@ last_modified_at: 2023-11-24
 
 ```java
 public interface Subject {
-	public void register(Observer observer);
-	public void remove(Observer observer);
-	public boolean sendAd(String ad);
+  public void register(Observer observer);
+  public void remove(Observer observer);
+  public boolean sendAd(String ad);
 }
 
 public interface Observer {
-	public boolean alertMessage(String message);
+  public boolean alertMessage(String message);
 }
 ```
 
@@ -81,27 +81,27 @@ public interface Observer {
 
 ```java
 public class Company implements Subject {
-	private List<Observer> observerList;
+  private List<Observer> observerList;
 
-	public Company() {
-		this.observerList = new ArrayList<>();
-	}
+  public Company() {
+    this.observerList = new ArrayList<>();
+  }
 
-	@Override
-	public void register(Observer observer) {
-		observerList.add(observer);
-	}
+  @Override
+  public void register(Observer observer) {
+    observerList.add(observer);
+  }
 
-	@Override
-	public void remove(Observer observer) {
-		observerList.remove(observer);
-	}
+  @Override
+  public void remove(Observer observer) {
+    observerList.remove(observer);
+  }
 
-	@Override
-	public boolean sendAd(String ad) {
-		observerList.stream().forEach(observer -> observer.alertMessage(ad));
-		return true;
-	}
+  @Override
+  public boolean sendAd(String ad) {
+    observerList.stream().forEach(observer -> observer.alertMessage(ad));
+    return true;
+  }
 }
 ```
 
@@ -111,16 +111,16 @@ public class Company implements Subject {
 
 ```java
 public class IPhone implements Observer {
-	private String name;
-	public IPhone(String name) {
-		this.name = name;
-	}
+  private String name;
+  public IPhone(String name) {
+    this.name = name;
+  }
 
-	@Override
-	public boolean alertMessage(String message) {
-		System.out.println(name + "의 폰: " + message);
-		return true;
-	}
+  @Override
+  public boolean alertMessage(String message) {
+    System.out.println(name + "의 폰: " + message);
+    return true;
+  }
 }
 ```
 
@@ -128,16 +128,16 @@ public class IPhone implements Observer {
 
 ```java
 public class Main {
-	public static void main(String[] args) {
-		Company company = new Company();
+  public static void main(String[] args) {
+    Company company = new Company();
 
-		IPhone myPhone = new IPhone("세준");
-		IPhone otherPhone = new IPhone("그루트");
-		company.register(myPhone); // 어플 설치 및 광고 수락
-		company.register(otherPhone);
+    IPhone myPhone = new IPhone("세준");
+    IPhone otherPhone = new IPhone("그루트");
+    company.register(myPhone); // 어플 설치 및 광고 수락
+    company.register(otherPhone);
 
-		// 우리 회사에서 할인이벤트를 하니까 등록된 고객님들에게 메세지를 보내야지
-		company.sendAd("특급 프로모션 50프로 할인!!");
+    // 우리 회사에서 할인이벤트를 하니까 등록된 고객님들에게 메세지를 보내야지
+    company.sendAd("특급 프로모션 50프로 할인!!");
 	}
 }
 ```
@@ -160,55 +160,55 @@ Push 방식대신 Pull 방식으로도 설계할 수 있습니다.
 
 ```java
 public interface Observer {
-    public void inform(); //추가된 메서드
-    public boolean alertMessage();
+  public void inform(); //추가된 메서드
+  public boolean alertMessage();
 }
 
 public interface Subject {
-    public void register(Observer observer);
-    public void remove(Observer observer);
-    public boolean update(); //변경된 메서드
-    public String getAd(); //추가된 메서드
+  public void register(Observer observer);
+  public void remove(Observer observer);
+  public boolean update(); //변경된 메서드
+  public String getAd(); //추가된 메서드
 }
 
 public class Company implements Subject {
-    private List<Observer> observerList;
-    private String Ad; //추가된 변수
+  private List<Observer> observerList;
+  private String Ad; //추가된 변수
 
-		//생성자, register, remove 코드 생략
+  //생성자, register, remove 코드 생략
 
-    @Override
-    public boolean update() {
-        observerList.forEach(Observer::inform);
-        return true;
-    }
+  @Override
+  public boolean update() {
+    observerList.forEach(Observer::inform);
+    return true;
+  }
 
-    @Override
-    public String getAd() {
-        return Ad;
-    }
+  @Override
+  public String getAd() {
+    return Ad;
+  }
 
-    public void setAd(String ad) {
-        this.Ad = ad;
-    }
+  public void setAd(String ad) {
+    this.Ad = ad;
+  }
 }
 
 public class IPhone implements Observer {
-    private String name;
-    private Subject subject;
-    private String message;
+  private String name;
+  private Subject subject;
+  private String message;
 
-    public IPhone(String name, Subject subject) {
-        this.name = name;
-        this.subject = subject;
-    }
+  public IPhone(String name, Subject subject) {
+    this.name = name;
+    this.subject = subject;
+  }
 
-    @Override
-    public void inform() {
-        message = subject.getAd();
-        alertMessage();
-    }
-		//alertMessage 함수 코드 생략
+  @Override
+  public void inform() {
+    message = subject.getAd();
+    alertMessage();
+  }
+  //alertMessage 함수 코드 생략
 }
 ```
 
@@ -218,18 +218,18 @@ public class IPhone implements Observer {
 
 ```java
 public class Main {
-    public static void main(String[] args) {
-        Company company = new Company();
+  public static void main(String[] args) {
+    Company company = new Company();
 
-        IPhone myPhone = new IPhone("세준", company);
-        IPhone otherPhone = new IPhone("그루트", company);
-        company.register(myPhone); // 어플 설치 및 광고 수락
-        company.register(otherPhone);
+    IPhone myPhone = new IPhone("세준", company);
+    IPhone otherPhone = new IPhone("그루트", company);
+    company.register(myPhone); // 어플 설치 및 광고 수락
+    company.register(otherPhone);
 
-        // 우리 회사에서 할인이벤트를 하니까 등록된 고객님들에게 메세지를 보내야지
-        company.setAd("완전 특가! 99프로 할인!");
-        company.update();
-    }
+    // 우리 회사에서 할인이벤트를 하니까 등록된 고객님들에게 메세지를 보내야지
+    company.setAd("완전 특가! 99프로 할인!");
+    company.update();
+  }
 }
 ```
 
