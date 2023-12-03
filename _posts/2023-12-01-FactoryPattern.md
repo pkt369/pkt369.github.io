@@ -227,7 +227,7 @@ public class BigMacBurger extends Burger {
   Sauce sauce;
   Bread bread;
 	
-	public BigMacBurger() {
+  public BigMacBurger() {
     this.vegetable = new Lettuce();
     this.meat = new Pig();
     this.sauce = new Salsa();
@@ -246,25 +246,25 @@ public class BigMacBurger extends Burger {
 
 ```java
 public interface IngredientFactory {
-	Vegetable getVegetable();
+  Vegetable getVegetable();
   Meat getMeat();
   Sauce getSauce();
   Bread getBread();
 }
 
 public class KoreaBigMacIngredientFactory {
-	public Vegetable getVegetable() {
-		return new Lettuce();
-	}
+  public Vegetable getVegetable() {
+    return new Lettuce();
+  }
   public Meat getMeat() {
-		return new Pig();
-	}
+    return new Pig();
+  }
   public Sauce getSauce() {
-		return new Salsa();
-	}
+    return new Salsa();
+  }
   public Bread getBread() {
-		return new BasicBread();
-	}
+    return new BasicBread();
+  }
 }
 ```
 
@@ -279,19 +279,19 @@ public class BigMacBurger extends Burger {
   Sauce sauce;
   Bread bread;
 	
-	public BigMacBurger(IngredientFactory ingredientFactory) {
+  public BigMacBurger(IngredientFactory ingredientFactory) {
     vegetable = ingredientFactory.getVegetable();
-		meat = ingredientFactory.getMeat();
-		sauce = ingredientFactory.getSauce();
-		bread = ingredientFactory.getBread();
+    meat = ingredientFactory.getMeat();
+    sauce = ingredientFactory.getSauce();
+    bread = ingredientFactory.getBread();
   }
 }
 
 class Main {
-	public static void main(String[] args) {
-		IngredientFactory ingredientFactory = new KoreaBigMacIngredientFactory();
-		new BigMacBurger(ingredientFactory);
-	}
+  public static void main(String[] args) {
+    IngredientFactory ingredientFactory = new KoreaBigMacIngredientFactory();
+    new BigMacBurger(ingredientFactory);
+  }
 }
 ```
 
