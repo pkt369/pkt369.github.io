@@ -11,6 +11,7 @@ permalink: /CS/design-pattern/command
 
 toc: true
 toc_sticky: true
+published: true
 
 date: 2023-12-04
 last_modified_at: 2023-12-04
