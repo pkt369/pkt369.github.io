@@ -98,7 +98,7 @@ class Main {
 }
 ```
 
-EngineFacade 클래스에서 start 가 퍼사드 패턴의 핵심 코드라고 할 수 있으며, 사용하는 Main 에서는 내부에서 **어떠한 방식으로 이루어지는 또한 어떤 순서로 이루어지는 몰라도 사용할 수 있도록 하였습니다.**
+EngineFacade 클래스에서 start 가 퍼사드 패턴의 핵심 코드라고 할 수 있으며, 사용하는 Main 에서는 내부에서 **어떠한 방식으로 이루어지는, 어떤 순서로 이루어지는 몰라도 start 함수 하나만 알면 사용할 수 있도록 하였습니다.**
 
 ![diagram](/assets/images/posts_img/cs-facadePattern/diagram.png)
 

@@ -66,7 +66,7 @@ CType 충전기에 관련한 코드 입니다.
 public interface CType {
   void charge();
 }
-public class CTypeCharger implements Charger, CType {
+public class CTypeCharger implements CType {
   @Override
   public void charge() {
     System.out.print("C타입 충전");
