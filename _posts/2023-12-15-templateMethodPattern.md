@@ -139,7 +139,7 @@ public class ShrimpBurger extends Burger {
 
 위처럼 **Burger 슈퍼 클래스를 만들고, 함수에 final 을 붙힘으로써 자식에서는 오버라이딩 못하게 만듦으로써 템플릿화**하였습니다.
 
-그리고 **abstract 클래스라 자식을 생성해야지만 사용할 수 있게 하여, 인터페이스화하였고, abstract 함수를 사용하여 자식클래스에서 만들도록 하여 서로 다른 부분을 구현**하도록 만들었습니다.
+그리고 **abstract 클래스라 자식을 생성해야지만 사용할 수 있게 하여 인터페이스화하였고, abstract 함수를 사용하여 자식클래스에서 만들도록 하여 서로 다른 부분을 구현**하도록 만들었습니다.
 
 ![BurgerVer1](/assets/images/posts_img/cs-templateMethod/BurgerVer1.png)
 
@@ -223,6 +223,8 @@ class Main {
 ![BurgerVer2](/assets/images/posts_img/cs-templateMethod/BurgerVer2.png)
 
 <br>
+
+
 
 # 참조
 
