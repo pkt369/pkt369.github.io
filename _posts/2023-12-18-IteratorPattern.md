@@ -53,13 +53,15 @@ public class Music {
     return name;
   }
 }
+```
 
+먼저 음원 클래스는 위와 같습니다.
+
+<br>
+
+```java
 public class WeCompany {
-  List<Music> musicList;
-
-  public WeCompany() {
-    musicList = new ArrayList<>();
-  }
+  List<Music> musicList = new ArrayList<>();;
 
   public void add(Music music) {
     musicList.add(music);
@@ -68,11 +70,10 @@ public class WeCompany {
 
 public class OtherCompany {
   Music[] musicArr;
-  int index;
+  int index = 0;
 
   public OtherCompany(int count) {
     musicArr = new Music[count];
-    index = 0;
   }
 
   public void add(Music music) {
@@ -112,7 +113,13 @@ public class MusicPlayer {
     }
   }
 }
+```
 
+위는 음원을 실행시켜주는 앱의 코드입니다.
+
+<br>
+
+```java
 class Main {
   public static void main(String[] args) {
     WeCompany weCompany = new WeCompany();
@@ -129,11 +136,13 @@ class Main {
 }
 ```
 
+위처럼 실행시키게 되면 다음과 같습니다.
+
 ![result1](/assets/images/posts_img/cs-iteratorPattern/result1.png)
 
 위의 코드를 보시면 **for 문을 두번돌려야 하는 번거로움이 존재**합니다. 만약 다른 업체에서는 Map 을 이용한다면 for 문을 3번돌려야 할 것입니다.
 
-이때 반복자 패턴을 이용하면 한번의 for 문으로도 동작할 수 있게 됩니다.
+이때 반복자 패턴을 이용하면 불필요한 중복 코드를 없앨 수 있습니다.
 
 <br>
 
@@ -145,19 +154,9 @@ class Main {
 
 바로 **Iterator 를 사용하는 것**입니다.
 
-<br>
-
 ```java
 public class WeCompany {
-  List<Music> musicList;
-
-  public WeCompany() {
-    musicList = new ArrayList<>();
-  }
-
-  public void add(Music music) {
-    musicList.add(music);
-  }
+  ...
 
   // 추가된 코드
   public Iterator<Music> getIterator() {
@@ -192,21 +191,7 @@ public class OtherCompanyIterator implements Iterator<Music> {
 }
 
 public class OtherCompany {
-  Music[] musicArr;
-  int index;
-
-  public OtherCompany(int count) {
-    musicArr = new Music[count];
-    index = 0;
-  }
-
-  public void add(Music music) {
-    if (index >= musicArr.length) {
-      System.out.println("이미 가질수 있는 음원이 꽉 찼습니다.");
-      return;
-    }
-    musicArr[index++] = music;
-  }
+  ...
 
   // 추가된 코드
   public Iterator<Music> getIterator() {
@@ -221,13 +206,7 @@ public class OtherCompany {
 
 ```java
 public class MusicPlayer {
-  WeCompany weCompany;
-  OtherCompany otherCompany;
-
-  public MusicPlayer(WeCompany weCompany, OtherCompany otherCompany) {
-    this.weCompany = weCompany;
-    this.otherCompany = otherCompany;
-  }
+  ...
 
   public void play() {
     Iterator<Music> weCompanyIterator = weCompany.getIterator();
@@ -243,7 +222,13 @@ public class MusicPlayer {
     }
   }
 }
+```
 
+이터레이터를 이용하면 위처럼 공통된 함수를 만들어 반복적인 일을 하지 않아도 됩니다.
+
+이렇게 되면서 **반복자를 다른 객체로 빼내면서 결합도를 줄일수 있었습니다.**
+
+```java
 class Main {
   public static void main(String[] args) {
     WeCompany weCompany = new WeCompany();
@@ -262,11 +247,7 @@ class Main {
 
 ![result2](/assets/images/posts_img/cs-iteratorPattern/result2.png)
 
-이터레이터를 이용하면 위처럼 공통된 함수를 만들어 반복적인 일을 하지 않아도 됩니다.
-
-이렇게 되면서 **반복자를 다른 객체로 빼내면서 결합도를 줄일수 있었습니다.**
-
-또한 **위의 코드에서는 간단하게 보여주기 위해 생성자를 직접받아 구현하였지만 만약 인터페이스를 정의하고 그룹으로 받는다면 OCP 를 지킬 수 있습니다.**
+**위의 코드에서는 간단하게 보여주기 위해 생성자를 직접받아 구현하였지만 만약 인터페이스를 정의하고 그룹으로 받는다면 OCP 를 지킬 수 있습니다.**
 
 <br>
 
