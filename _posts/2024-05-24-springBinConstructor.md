@@ -140,7 +140,7 @@ public class D {
 실제로 실행해보면 <br>
 <img width="51" alt="image" src="https://github.com/pkt369/pkt369.github.io/assets/66049273/6adc3190-f559-41f4-9a2b-0d7932328134">
 <br>
-와 같이 나오는데 위에서 언급한대로 잘 나오고 있습니다. 정리하면
+와 같이 나오는데 위에서 언급한대로 잘 나오고 있습니다. 정리하면 
 
 > 생성자 주입의 DI (Dependency Injection) 의 경우에는 스프링이 빈의 의존관계들을 파악해서 필요한 객체들을 먼저 만들어 주입해주는 것을 알 수 있습니다.
-
+<br>
