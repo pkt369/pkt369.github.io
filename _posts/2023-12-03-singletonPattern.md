@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2023-12-03
-last_modified_at: 2023-12-03
+last_modified_at: 2024-06-05
 
 ---
 
@@ -208,6 +208,10 @@ public class Singleton {
 
 먼저 위처럼 가능한 이유는 **Class 를 로딩할 때 Thread Safe 를 보장하는 것을 이용**하였습니다. 즉, 위 방식의 경우 하나의 인스턴스만 생성되는 걸 보장합니다.
 
+내부 동작 방식은 LazyHolder 에 static 이 붙어서 Enum 과 똑같이 MethodArea 영역으로 가게 되는데 특성상 하나만 생성이 되고 서버가 끝날때까지 없어지지 않습니다.
+
+변수에 선언하는 static 과 다른 점은 클래스를 로딩하는 시점에서 생기는 것이 아닌 직접 함수를 통해 부를때 (getInstance) 생성됩니다.
+
 <br>
 
 단점으로는 **역직렬화 수행시 새로운 객체가 생성되고, 리플렉션을 이용해 내부 생성자 호출**이 가능합니다.
@@ -219,6 +223,10 @@ public class Singleton {
 자바 직렬화 역직렬화 참조) [https://steady-coding.tistory.com/576#google_vignette](https://steady-coding.tistory.com/576#google_vignette)
 
 리플렉션 참조) [https://velog.io/@yeon/Reflection이란](https://velog.io/@yeon/Reflection%EC%9D%B4%EB%9E%80)
+
+<br>
+
+
 
 <br>
 <br>
