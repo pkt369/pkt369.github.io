@@ -1,6 +1,6 @@
 ---
-title: "프로젝트 세팅하기 시리즈::EC2 설치하기"
-excerpt: "AWS 의 EC2 를 설치하는 방법입니다."
+title: "EC2 설치하기"
+excerpt: "프로젝트 세팅하기 시리즈에서 AWS 의 EC2 를 설치하는 방법입니다."
 
 categories:
   - project-setting
