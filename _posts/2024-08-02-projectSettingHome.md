@@ -51,13 +51,15 @@ last_modified_at: 2024-08-02
 
 [리눅스 서버 시간 변경](/project-setting/linux-time-change)
 
+[S3 서버 연결하기](/project-setting/s3/setting)
+
 <br>
 
 
 
 **o 작성 예정 o**
 
-S3 서버 연결하기 - url 로 서버에서 받기
+
 
 localstack 으로 S3 서버 대신 사용하기
 
