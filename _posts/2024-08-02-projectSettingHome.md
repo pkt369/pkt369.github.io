@@ -69,6 +69,8 @@ ec2 에 mysql 세팅하기
 
 로컬에 mysql 세팅하기
 
+Jacoco 세팅하기
+
 <br>
 
 <br>
@@ -80,4 +82,6 @@ ec2 에 mysql 세팅하기
 에러 부분 세팅
 
 ApiResponse 세팅
+
+Test H2 데이터베이스로 실행하기
 
