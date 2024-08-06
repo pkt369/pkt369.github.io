@@ -92,7 +92,7 @@ implementation 'com.amazonaws:aws-java-sdk-s3:1.12.749'
 testImplementation 'cloud.localstack:localstack-utils:0.2.20'
 ```
 
-Gradle 에 먼저 밑과 같이 작성합니다.
+Gradle 에 먼저 위와 같이 작성합니다.
 
 <br>
 

@@ -53,21 +53,21 @@ last_modified_at: 2024-08-02
 
 [S3 서버 연결하기](/project-setting/s3/setting)
 
+[local에서 S3 서버 대신 사용하기](/project-setting/s3/localstack)
+
+[로컬에서 도커로 MYSQL 사용하기](/project-setting/mysql/local)
+
 <br>
 
 
 
 **o 작성 예정 o**
 
-
-
-localstack 으로 S3 서버 대신 사용하기
-
 ec2 에 jenkins 세팅하기
 
-ec2 에 mysql 세팅하기
+ec2 에 직접 mysql 세팅하기
 
-로컬에 mysql 세팅하기
+
 
 Jacoco 세팅하기
 
