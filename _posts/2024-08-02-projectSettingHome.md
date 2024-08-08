@@ -79,9 +79,13 @@ Jacoco 세팅하기
 
 ## 코드 세팅
 
+[Logback 으로 로그 작성하기](/project-setting/logback)
+
 에러 부분 세팅
 
 ApiResponse 세팅
 
 Test H2 데이터베이스로 실행하기
+
+
 
