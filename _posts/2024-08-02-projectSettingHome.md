@@ -57,6 +57,8 @@ last_modified_at: 2024-08-02
 
 [로컬에서 도커로 MYSQL 사용하기](/project-setting/mysql/local)
 
+[GABIA 에서 산 도메인 EC2 에서 HTTPS 연결하기](/project-setting/https/ec2-gabia)
+
 <br>
 
 
@@ -66,8 +68,6 @@ last_modified_at: 2024-08-02
 ec2 에 jenkins 세팅하기
 
 ec2 에 직접 mysql 세팅하기
-
-
 
 Jacoco 세팅하기
 
