@@ -57,17 +57,19 @@ last_modified_at: 2024-08-02
 
 [로컬에서 도커로 MYSQL 사용하기](/project-setting/mysql/local)
 
+[EC2 에서 MYSQL 직접 사용하기](/project-setting/mysql/direct-ec2)
+
 [GABIA 에서 산 도메인 EC2 에서 HTTPS 연결하기](/project-setting/https/ec2-gabia)
+
+[EC2 서버에서 Jenkins 세팅과 웹훅 설정하기](/project-setting/jenkins/webhook/setting)
+
+[Jenkins Pipeline 으로 빌드하고 배포하기](/project-setting/jenkins/deploy)
 
 <br>
 
 
 
 **o 작성 예정 o**
-
-ec2 에 jenkins 세팅하기
-
-ec2 에 직접 mysql 세팅하기
 
 Jacoco 세팅하기
 
