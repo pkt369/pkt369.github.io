@@ -83,7 +83,7 @@ Jacoco 세팅하기
 
 [Logback 으로 로그 작성하기](/project-setting/logback)
 
-에러 부분 세팅
+[Spring 에서 Exception 관리하기](/project-setting/exception)
 
 ApiResponse 세팅
 
