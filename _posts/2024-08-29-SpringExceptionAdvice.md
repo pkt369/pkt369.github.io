@@ -26,9 +26,9 @@ Spring 에서 에러를 그대로 유저에게 노출시키는건 좋지 않은 
 
 # @ExceptionHandler
 
-먼저 에러를 컨트롤하기위해서는 @ExceptionHandler 가 존재합니다.
+먼저 에러를 컨트롤하기위해서는 **@ExceptionHandler** 가 존재합니다.
 
-@Controller 어노테이션이 존재하는 컨트롤러에서 사용이 가능하며 각 컨트롤러마다 ExceptionHandler 어노테이션을 사용해 관리할 수 있습니다.
+**@Controller 어노테이션이 존재하는 컨트롤러에서 사용**이 가능하며 각 컨트롤러마다 ExceptionHandler 어노테이션을 사용해 관리할 수 있습니다.
 
 ```java
 @Controller
@@ -67,9 +67,9 @@ public class ExceptionControllerAdvice {
 모든 API 컨트롤러에 대해서 에러를 관리하기 위해 위와 같은 코드를 설정합니다.
 
 - **ResponseStatus**
-  - 어떤 응답값으로 내려줄지 설정하는 부분입니다.
+  - 어떤 **응답값**으로 내려줄지 설정하는 부분입니다.
 - **ExceptionHandler**
-  - 특정타입의 예외가 발생했을때 이를 처리하는 메서드를 지정해서 사용합니다.
+  - 특정타입의 예외가 발생했을때 이를 처리하는 **메서드를 지정**해서 사용합니다.
   - 괄호를 적지 않으면 특정타을 제외한 에러에 대해 사용하겠다는 의미입니다.
   - 두개 이상을 적어 사용할 수도 있습니다.
 
